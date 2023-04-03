@@ -24,5 +24,13 @@ namespace Golden_Life
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 levelWindow = new Window1();
+            Visibility = Visibility.Hidden;
+            levelWindow.Show();
+
+        }
     }
 }
