@@ -17,9 +17,9 @@ namespace Golden_Life
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class LevelSelect : Window
     {
-        public Window1()
+        public LevelSelect()
         {
             InitializeComponent();
         }

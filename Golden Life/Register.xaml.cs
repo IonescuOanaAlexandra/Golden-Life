@@ -10,27 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Golden_Life
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Register : Window
     {
-        public MainWindow()
+        public Register()
         {
             InitializeComponent();
         }
 
-        private void startButton_Click(object sender, RoutedEventArgs e)
+        private void submitButton_Click(object sender, RoutedEventArgs e)
         {
-            Register inregistrare = new Register();
-            Visibility = Visibility.Hidden;
-            inregistrare.Show();
-
+            LevelSelect levelSelect = new LevelSelect();
+            Visibility= Visibility.Hidden;
+            levelSelect.Show();
         }
     }
 }
