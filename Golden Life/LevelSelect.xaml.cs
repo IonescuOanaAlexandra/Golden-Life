@@ -24,6 +24,9 @@ namespace Golden_Life
             InitializeComponent();
             this.DataContext = this;
         }
+        public LevelSelect(string text) : this()
+        {
+            label.Content = text;
 
         private void lvl1_Click(object sender, RoutedEventArgs e)
         {
