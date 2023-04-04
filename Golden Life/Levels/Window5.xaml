@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Golden_Life"
         mc:Ignorable="d"
-        Title="Window5" Height="450" Width="800">
+        Title="Window5" Height="455" Width="800" KeyDown="Window_KeyDown">
     <Grid>
-        
+        <Image Source="/Resources/sycily.png" Stretch="Fill" Panel.ZIndex="-1"/>
+        <MediaElement x:Name="MePlayer" Stretch="Fill" 
+                      Panel.ZIndex="2" Initialized="MePlayer_Initialized" 
+                      LoadedBehavior="Manual" Margin="0,0,0,-16" 
+                      MediaEnded="MePlayer_MediaEnded"  MediaOpened="MePlayer_MediaOpened" />
     </Grid>
 </Window>

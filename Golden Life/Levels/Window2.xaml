@@ -7,14 +7,10 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="700" KeyDown="Window_KeyDown">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Image Source="/Resources/egypt.png" Stretch="Fill" Panel.ZIndex="-1" Visibility="Hidden" />
-        <MediaElement x:Name="MePlayer" Height="450" Width="700" 
+        <Image Source="/Resources/egypt.png" Stretch="Fill" Panel.ZIndex="-1"/>
+        <MediaElement x:Name="MePlayer" Stretch="Fill" 
                       Panel.ZIndex="2" Initialized="MePlayer_Initialized" 
                       LoadedBehavior="Manual" Margin="0,0,0,-16" 
-                      MediaEnded="MePlayer_MediaEnded"  MediaOpened="MePlayer_MediaOpened"  />
-
+                      MediaEnded="MePlayer_MediaEnded"  MediaOpened="MePlayer_MediaOpened" />
     </Grid>
 </Window>

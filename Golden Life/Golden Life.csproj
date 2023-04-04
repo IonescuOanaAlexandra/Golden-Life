@@ -162,18 +162,46 @@
     <Content Include="Animations\egypt.right.mov">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Animations\greece_center.mov" />
-    <Content Include="Animations\greece_left.mov" />
-    <Content Include="Animations\greece_right.mov" />
-    <Content Include="Animations\provence_center.mov" />
-    <Content Include="Animations\provence_left.mov" />
-    <Content Include="Animations\provence_right.mov" />
-    <Content Include="Animations\sycily_left.mov" />
-    <Content Include="Animations\sycily_mijloc.mov" />
-    <Content Include="Animations\sycily_right.mov" />
-    <Content Include="Animations\syria_center.mov" />
-    <Content Include="Animations\syria_left.mov" />
-    <Content Include="Animations\syria_right.mov" />
+    <Content Include="Animations\greece_center.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\greece_left.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\greece_right.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\provence_center.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\provence_left.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\provence_right.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\sycily_left.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\sycily_mijloc.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\sycily_right.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\syria_center.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\syria_left.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\syria_right.mov">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\provence.png" />
+    <Resource Include="Resources\greece.png" />
+    <Resource Include="Resources\sycily.png" />
+    <Resource Include="Resources\syria.png" />
     <Resource Include="Resources\egypt.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

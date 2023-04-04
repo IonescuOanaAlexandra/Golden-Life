@@ -14,6 +14,10 @@
         </Style>
     </Window.Resources>
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock  x:Name="helloPlayer"
+                    Width="350"
+                    Height="80"
+                    Text="{Binding Path=name}"/>
         <Button x:Name="lvl1" Content="Egipt"
                 RenderTransformOrigin="0.163,0.628" 
                 Click="lvl1_Click">

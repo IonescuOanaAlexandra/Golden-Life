@@ -19,6 +19,7 @@ namespace Golden_Life
     /// </summary>
     public partial class Register : Window
     {
+        public string name { get; set; } = "playerName.text";
         public Register()
         {
             InitializeComponent();
@@ -26,9 +27,16 @@ namespace Golden_Life
 
         private void submitButton_Click(object sender, RoutedEventArgs e)
         {
-            LevelSelect levelSelect = new LevelSelect();
-            Visibility= Visibility.Hidden;
-            levelSelect.Show();
+            //if (playerName.Text == "Abcd")
+            //{
+                LevelSelect levelSelect = new LevelSelect();
+                Visibility = Visibility.Hidden;
+                levelSelect.Show();
+            //}
+            //else
+           // {
+            //    MessageBox.Show($"Nume incorect");
+           // }
         }
     }
 }

@@ -27,27 +27,6 @@ namespace Golden_Life
         {
             InitializeComponent();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-
-        private void MePlayer_Initialized(object sender, EventArgs e)
-        {
-            MePlayer.Pause();
-        }
-        private void MePlayer_MediaEnded(object sender, RoutedEventArgs e)
-        {
-            AnimationPlaying = false;
-        }
-
-        private void MePlayer_MediaOpened(object sender, RoutedEventArgs e)
-        {
-            MePlayer.Play();
-        }
-
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
@@ -67,6 +46,19 @@ namespace Golden_Life
                 MePlayer.Source = new System.Uri(baseDirectory + "\\Animations\\egypt.left.mov");
                 AnimationPlaying = true;
             }
+        }
+        private void MePlayer_Initialized(object sender, EventArgs e)
+        {
+            MePlayer.Pause();
+        }
+        private void MePlayer_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            AnimationPlaying = false;
+        }
+
+        private void MePlayer_MediaOpened(object sender, RoutedEventArgs e)
+        {
+            MePlayer.Play();
         }
     }
 }
