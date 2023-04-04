@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Golden_Life"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
-    <Grid>
-        <TextBox HorizontalAlignment="Left" Height="98" Margin="306,198,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="210" TextChanged="TextBox_TextChanged"/>
+        Title="Window2" Height="450" Width="700">
+    <Grid KeyDown="Grid_KeyDown">
+        <Image Source="/Resources/egypt.png" Stretch="Fill" Panel.ZIndex="-1" />
+        <MediaElement x:Name="MePlayer" Height="450" Width="700" 
+                      Panel.ZIndex="2" Initialized="MePlayer_Initialized" 
+                      LoadedBehavior="Manual"/>
 
     </Grid>
 </Window>

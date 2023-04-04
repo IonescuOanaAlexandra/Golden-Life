@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Golden_Life</RootNamespace>
     <AssemblyName>Golden Life</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -152,5 +152,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Animations\egypt.left.mov" />
+    <Content Include="Animations\egypt.right.mov" />
+    <Content Include="Animations\greece_center.mov" />
+    <Content Include="Animations\greece_left.mov" />
+    <Content Include="Animations\greece_right.mov" />
+    <Content Include="Animations\provence_center.mov" />
+    <Content Include="Animations\provence_left.mov" />
+    <Content Include="Animations\provence_right.mov" />
+    <Content Include="Animations\sycily_left.mov" />
+    <Content Include="Animations\sycily_mijloc.mov" />
+    <Content Include="Animations\sycily_right.mov" />
+    <Content Include="Animations\syria_center.mov" />
+    <Content Include="Animations\syria_left.mov" />
+    <Content Include="Animations\syria_right.mov" />
+    <Resource Include="Resources\egypt.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

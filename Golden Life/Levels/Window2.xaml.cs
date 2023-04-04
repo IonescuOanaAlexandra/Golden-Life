@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
+using Path = System.IO.Path;
 
 namespace Golden_Life
 {
@@ -19,6 +21,7 @@ namespace Golden_Life
     /// </summary>
     public partial class Window2 : Window
     {
+        bool AnimationPlaying = false;
         public Window2()
         {
             InitializeComponent();
@@ -27,6 +30,41 @@ namespace Golden_Life
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Grid_KeyDown(object sender, KeyEventArgs e)
+        {
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            if (Keyboard.IsKeyDown(Key.S) && AnimationPlaying == false)
+            {
+                MePlayer.Source = new System.Uri(baseDirectory + "\\Animations\\egypt_center.mov");
+                AnimationPlaying = true;
+            }
+            if (Keyboard.IsKeyDown(Key.D) && AnimationPlaying == false)
+            {
+                MePlayer.Source = new System.Uri(baseDirectory + "\\Animations\\egypt_right.mov");
+                AnimationPlaying = true;
+            }
+            if (Keyboard.IsKeyDown(Key.A) && AnimationPlaying == false)
+            {
+                MePlayer.Source = new System.Uri(baseDirectory + "\\Animations\\egypt_left.mov");
+                AnimationPlaying = true;
+            }
+        }
+
+        private void MePlayer_Initialized(object sender, EventArgs e)
+        {
+            MePlayer.Pause();
+        }
+        private void MePlayer_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            AnimationPlaying = false;
+        }
+
+        private void MePlayer_MediaOpened(object sender, RoutedEventArgs e)
+        {
+            MePlayer.Play();
         }
     }
 }
